@@ -1,2 +1,4 @@
 <h2>Edit Survey</h2>
+<%# if current_user.try(:admin?) %>
 <%= render 'form' %>
+<%# end %>

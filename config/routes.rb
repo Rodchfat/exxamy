@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
   devise_for :models
+  devise_for :admins
+  devise_for :users
   root 'page#home'
   resources :surveys 
   get 'page/about'
